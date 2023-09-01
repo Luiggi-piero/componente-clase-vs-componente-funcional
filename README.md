@@ -1,3 +1,5 @@
+![screencapture-localhost-3000-2023-08-31-19_47_12](https://github.com/Luiggi-piero/componente-clase-vs-componente-funcional/assets/86317658/25c78d2e-8f52-4f20-8a35-75810bf5b888)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
