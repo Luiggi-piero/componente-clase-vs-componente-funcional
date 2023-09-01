@@ -1,24 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import FormSignUp from './components/FormSignUp';
+import Container from '@mui/material/Container';
+import Typography from '@mui/material/Typography';
+// import { Fragment } from 'react';
 
 function App() {
+
+  const handleSubmit = (valores) => {
+    console.log('DESde app.js', valores);
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    // Fragment funciono como ng-container en angular, no genera elementos en el DOM
+    // <Fragment>
+    //   hola
+    // </Fragment>
+
+    // component : 'etiqueta raiz o componente raiz que envuelve todo el contenido'
+    <Container component="section" maxWidth="sm">
+      <Typography variant='h3' align='center'>Formulario registro</Typography>
+      <FormSignUp handleSubmit={handleSubmit} />
+    </Container>
   );
 }
 
